@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Profile card component</title>
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+   <title>Frontend Mentor | Profile card component</title>
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+   <!-- <section class="back_ground">
+      <img class="top_pattern" src="images/bg-pattern-top.svg" alt="top pattern">
+      <img class="bottom_pattern" src="images/bg-pattern-bottom.svg" alt="bottom pattern">
+   </section> -->
 
-  803K
-  Likes
+   <section class="card">
+      <div class="card_header"> </div>
 
-  1.4K
-  Photos
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+      <div class="card_body">
+
+         <div class="card_photo">
+            <img src="images/image-victor.jpg" alt="Guy called Victor">
+         </div>
+
+         <div class="personal_info">
+            <div class="name_age">
+               <span class="name">Victor Crest</span>
+               <span class="age"> 26</span>
+            </div>
+            <div class="location">
+               London
+            </div>
+         </div>
+
+         <div class="card_footer">
+            <div class="followers">
+               <span class="number">80K</span>
+               <span class="media_text">Followers</span>
+            </div>
+            <div class="likes">
+               <span class="number">803K</span>
+               <span class="media_text">Likes</span>
+            </div>
+            <div class="photos">
+               <span class="number">1.4K</span>
+               <span class="media_text">Photos</span>
+            </div>
+         </div>
+
+      </div>
+   </section>
+   <!-- <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+   </div> -->
 </body>
+
 </html>
