@@ -16,6 +16,7 @@
 html,
 body {
 	height: 100%;
+	font-size: 18px;
 }
 
 html {
@@ -30,38 +31,33 @@ html {
 }
 
 body {
-	font-size: 16px;
 	font-family: "Kumbh Sans", sans-serif;
 	line-height: 1.3;
-	display: grid;
-	background: rgb(30, 213, 219);
-	/* background: url(../images/bg-pattern-bottom.svg); */
+	display: flex;
+	background: var(--primary-dark-cyan);
 }
 
-/* section {
-	position: relative;
+.circles img {
+	position: fixed;
 }
 
-.top_pattern,
-.bottom_pattern {
-	position: absolute;
-	width: 800px;
-	z-index: -1;
+.c1 {
+	bottom: 30%;
+	right: 54%;
 }
-.top_pattern {
-	top: -120%;
-	left: -10%;
+
+.c2 {
+	top: 54%;
+	left: 48%;
 }
-.bottom_pattern {
-	bottom: -120%;
-	right: -130px;
-} */
 
 .card {
 	border-radius: 0.8125rem;
 	background: #fff;
-	min-width: 310px;
 	margin: auto;
+	width: 100%;
+	max-width: 350px;
+	z-index: 2;
 }
 
 .card_header {
@@ -118,4 +114,8 @@ body {
 .location {
 	font-size: 0.625rem;
 	color: var(--neutral-dark-grey);
+}
+
+main ~ * {
+	display: none;
 }
